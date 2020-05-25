@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EditTextStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+</resources>

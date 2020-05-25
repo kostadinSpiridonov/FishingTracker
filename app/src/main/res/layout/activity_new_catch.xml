@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCatchActivity">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_class"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:layout_marginVertical="10dp"
+                    android:text="New Catch" />
+                <Spinner
+                    style="@style/EditTextStyle"
+                    android:id="@+id/spinner"
+                    android:layout_width="fill_parent"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    style="@style/EditTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Weight(kg)"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="numberDecimal" />
+                <EditText
+                    style="@style/EditTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lenght(cm)"
+                    android:inputType="number" />
+                <EditText
+                    style="@style/EditTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bait"
+                    android:inputType="text" />
+                <EditText
+                    style="@style/EditTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Temperature"
+                    android:inputType="numberDecimal" />
+                <EditText
+                    style="@style/EditTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pressure"
+                    android:inputType="numberDecimal" />
+                <EditText
+                    style="@style/EditTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hour"
+                    android:inputType="datetime" />
+                <Button
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select image"/>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:gravity="bottom"
+                    android:layout_height="match_parent" >
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:onClick="goToMain"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Cancel"/>
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:onClick="goToMain"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Save"/>
+                </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
